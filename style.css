@@ -895,3 +895,69 @@ section#projects { padding-bottom: 2rem; }
   transform: scale(1.25);
 } */
 
+
+
+.resume-hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 50px;
+  padding: 30px;
+  background: var(--glass);
+  border-radius: 18px;
+  backdrop-filter: blur(14px);
+  box-shadow: var(--soft-glow);
+}
+
+.resume-hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+}
+
+.resume-hero h1 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.resume-hero .role {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.resume-hero .tagline {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .resume-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* FOOTER ICON ANIMATION */
+.social-links a,
+footer a i {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, color 0.35s ease;
+}
+
+/* Hover Effect */
+.social-links a:hover i,
+footer a:hover i {
+  transform: translateY(-6px) scale(1.15);
+  box-shadow: 0 10px 25px rgba(0, 234, 255, 0.35);
+}
+
+/* Subtle glow */
+footer a i {
+  filter: drop-shadow(0 0 0 transparent);
+}
+
+footer a:hover i {
+  filter: drop-shadow(0 0 8px rgba(0, 234, 255, 0.7));
+}
