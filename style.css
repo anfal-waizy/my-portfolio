@@ -388,32 +388,32 @@ body{
 }
 
 /*navbar containerr */
-.nav{
+/* .nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-}
+} */
 
 /*navigation links*/
-.nav-links{
+/* .nav-links{
   display: flex;
   gap: 20px;  /* space bt manu items */ 
-  list-style: none;
+  /* list-style: none;
   margin-left: 80px; /* moves links to the right */
-}
+} */ */
 
 /* Menu link style */ 
-.nav-links a{
+/* .nav-links a{
   text-decoration: none;
-  color: white;  /* or your theme color */ 
-  font-weight: 500;
+  color: white;  or your theme color  */
+  /* font-weight: 500;
   transition: 0.3s;
-}
+} */
 
-.nav-links a:hover{
-  color: 00bfff;  /* hover effect */
-}
+/* .nav-links a:hover{ */
+  /* color: 00bfff;  /* hover effect */
+} */
 
 
 /* .about-stats {
@@ -474,27 +474,27 @@ body{
 } */
 
 
-.nav-links a {
+/* .nav-links a {
   text-decoration: none;
   color: var(--text, #ffffff); /* fallback white */
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #00bfff; /* accent color */
-}
+.nav-links a:hover { */
+  /* color: #00bfff; accent color */
 
 
 
-.project-links a {
-  color: #475569; /* soft grayish blue (default look) */
-  text-decoration: none;
+
+/* .project-links a { */
+  /* color: #475569; soft grayish blue (default look) */
+  /* text-decoration: none;
   font-weight: 500;
   transition: 0.3s ease;
-}
+} */
 
 .project-links a:hover {
   color: #0f172a; /* hover color */
@@ -960,4 +960,485 @@ footer a i {
 
 footer a:hover i {
   filter: drop-shadow(0 0 8px rgba(0, 234, 255, 0.7));
+}
+
+
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.drop-btn {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #0f172a;
+  border-radius: 8px;
+  padding: 8px 0;
+  min-width: 220px;
+  display: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background: #1e293b;
+  color: #00eaff;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.design-grid img {
+  width: 100%;
+  border-radius: 14px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.design-grid img:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+
+.footer-badge {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-badge .badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00eaff, #ff5f6d);
+  color: #0f172a;
+  letter-spacing: 0.3px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.footer-badge .badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 234, 255, 0.25);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+
+/* Main branded button */
+.brand-btn {
+  padding: 14px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #00eaff, #ff5f6d);
+  box-shadow: 0 8px 25px rgba(0, 234, 255, 0.25);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover animation */
+.brand-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 14px 35px rgba(0, 234, 255, 0.4);
+}
+
+/* Outline style for Designs */
+.brand-btn.outline {
+  background: transparent;
+  border: 2px solid #00eaff;
+  color: #00eaff;
+}
+
+.brand-btn.outline:hover {
+  background: linear-gradient(135deg, #00eaff, #ff5f6d);
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .brand-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Certificate Modal */
+.cert-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.cert-box {
+  background: linear-gradient(135deg,#0d1b2a,#1b263b);
+  max-width: 900px;
+  width: 100%;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  animation: scaleIn 0.4s ease;
+  color: #fff;
+}
+
+.cert-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+  background: linear-gradient(135deg,#00eaff,#ff5f6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cert-box p {
+  font-size: 0.9rem;
+  color: #cbd5f5;
+  margin-bottom: 15px;
+}
+
+.cert-box img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.cert-close {
+  position: absolute;
+  top: 15px;
+  right: 22px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Animation */
+@keyframes scaleIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Make certificate cards clickable */
+.cert-card {
+  cursor: pointer;
+}
+
+
+/* DESIGN SHOWCASE */
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.design-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0f172a;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0,234,255,0.25);
+}
+
+.design-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay */
+.design-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,234,255,0.85), rgba(255,95,109,0.85));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  color: #fff;
+  text-align: center;
+}
+
+.design-card:hover .design-overlay {
+  opacity: 1;
+}
+
+.design-overlay h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.design-overlay span {
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.25);
+}
+
+/* PDF Cards */
+.pdf-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pdf-thumb {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-thumb i {
+  font-size: 4rem;
+  color: #ef4444;
+}
+
+
+juu
+/* DESIGN GRID */
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* CARD */
+.design-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0f172a;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* SAME SIZE IMAGE */
+.design-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+/* HOVER EFFECT */
+.design-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.4);
+}
+
+.design-card:hover img {
+  transform: scale(1.08);
+}
+
+/* OVERLAY */
+.design-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15,23,42,0.92),
+    rgba(15,23,42,0.65)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.design-card:hover .design-overlay {
+  opacity: 1;
+}
+
+.design-overlay h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg,#00eaff,#ff5f6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 6px;
+}
+
+.design-overlay span {
+  font-size: 0.85rem;
+  color: #cbd5f5;
+  letter-spacing: 0.5px;
+}
+
+
+.section-sub {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+
+.section-sub {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 35px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #94a3b8;
+  letter-spacing: 0.4px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #00eaff, #ff5f6d);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 234, 255, 0.25);
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 95, 109, 0.35);
+}
+
+.btn.outline {
+  border: 1px solid #00eaff;
+  color: #00eaff;
+  background: transparent;
+}
+
+.btn.outline:hover {
+  background: rgba(0, 234, 255, 0.08);
+}
+
+/* Project Buttons – Global */
+.project-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Gradient Primary Button */
+.btn.gradient {
+  background: linear-gradient(135deg, #00eaff, #ff5f6d);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 234, 255, 0.25);
+}
+
+.btn.gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 95, 109, 0.35);
+}
+
+/* Ghost Button */
+.btn.ghost {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #e5e7eb;
+  background: transparent;
+}
+
+.btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #00eaff;
+  color: #00eaff;
 }

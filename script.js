@@ -70,3 +70,40 @@ backToTopBtn.addEventListener("click", () => {
 });
 
 
+function openCert(img, title, desc) {
+  document.getElementById("certImage").src = img;
+  document.getElementById("certTitle").innerText = title;
+  document.getElementById("certDesc").innerText = desc;
+  document.getElementById("certModal").style.display = "flex";
+}
+
+function closeCert() {
+  document.getElementById("certModal").style.display = "none";
+}
+
+
+const modal = document.getElementById("designModal");
+const imgViewer = document.getElementById("imgViewer");
+const pdfViewer = document.getElementById("pdfViewer");
+const closeBtn = document.querySelector(".close-modal");
+
+document.querySelectorAll(".design-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const type = card.dataset.type;
+    const src = card.dataset.src;
+
+    modal.style.display = "flex";
+
+    if (type === "pdf") {
+      imgViewer.style.display = "none";
+      pdfViewer.style.display = "block";
+      pdfViewer.src = src;
+    } else {
+      pdfViewer.style.display = "none";
+      imgViewer.style.display = "block";
+      imgViewer.src = src;
+    }
+  });
+});
+
+

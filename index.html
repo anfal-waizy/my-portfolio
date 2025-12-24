@@ -52,17 +52,34 @@
         <a class="logo" href="index.html"
           >ALIBAPU <span> MOHAMMED</span><span> ANFAL</span></a
         >
-        <ul class="nav-links">
+        <!-- <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#Design">Designs</a></li>
+
+          <li><a href="#certificate">Certificate</a></li>
+          <div class="cta-row"> -->
+  <!-- <a class="btn outline" href="certificates.html">
+    <i class="fa-solid fa-award"></i> Certificates
+  </a> -->
+  <ul class="nav-links">
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
         </ul>
         <div class="nav-actions">
           <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
         </div>
       </nav>
     </header>
+
+    
 
     <main>
       <!-- HERO -->
@@ -71,8 +88,9 @@
           <div class="hero-text">
             <!-- <h1>Hello, I'm <strong>ALIBAPU MOHAMMED ANFAL</strong></h1> -->
             <p class="subtitle">
-              Web Developer •  Graphic Designer • SEO with Digital Marketer
+              Web Developer •  Graphic Designer • SEO with Digital Marketing
             </p>
+            
 
             <p class="lead">
               Web and WordPress Developer with hands-on experience in designing,
@@ -91,8 +109,11 @@
 
             <div class="cta-row">
               <a class="btn gradient" href="#projects">View Projects</a>
-              <a class="btn ghost" href="resume.html">Resume</a>
+              <a class="btn gradient" href="resume.html">View Resume</a>
+              <a class="btn gradient" href="#designs">View Designs</a>
+              <a class="btn gradient" href="#certificates">View Certificates</a>
             </div>
+            
 
             <div class="socials">
               <a
@@ -163,6 +184,7 @@
       <a href="https://www.linkedin.com/in/anfal-alibapu-89732b398" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
         <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
       </a>
+      
     </div>
 
     <!-- Stats -->
@@ -197,14 +219,17 @@
         </h2>
         <div class="skills-grid">
           <span class="skill">WordPress Development</span>
-          <span class="skill">Web Designing</span>
+          <span class="skill">Theme, Plugin & API Customization</span>
+          <span class="skill">Responsive Web Design</span>
           <span class="skill">Graphic Design</span>
-          <span class="skill">Digital Marketing</span>
           <span class="skill">SEO Optimization</span>
           <span class="skill">Git & GitHub</span>
-          <span class="skill">Website Optimization</span>
+          <span class="skill">Website Optimization & Performance</span>
+          <span class="skill">Website Maintenance & Ongoing Support</span>
           <span class="skill">WooCommerce</span>
           <span class="skill">HTML5 / CSS / Bootstrap</span>
+          <span class="skill">JavaScript (Basics)</span>
+          <span class="skill">PHP (Basics)</span>
           <span class="skill">Photoshop, Illustrator, CorelDraw, Canva</span>
           <span class="skill">CapCut (Video Editing)</span>
           <span class="skill">Domain & Hosting Management</span>
@@ -214,9 +239,10 @@
       <!-- PROJECTS -->
 <section id="projects" class="container fade-in">
   <h2 class="section-title">
-    <span class="accent-underline">Projects</span>
-  </h2>
-  <p class="section-sub">Click a project to view full details</p>
+  <span class="accent-underline">Projects</span>
+</h2>
+<p class="section-sub">Click a project to view full details</p>
+
 
   <div class="projects-grid" role="list">
     <a class="project-card" href="project4.html" aria-label="Saeed Bin Masoud project" role="listitem">
@@ -224,6 +250,14 @@
       <div class="card-meta">
         <h3>Saeed Bin Masoud International</h3>
         <p>Corporate Website • Full-Stack</p>
+      </div>
+    </a>
+
+    <a class="project-card" href="project3.html" aria-label="Dr Kaiser project" role="listitem">
+      <img src="images/DrKaiser.png" alt="Dr Kaiser website screenshot" loading="lazy" />
+      <div class="card-meta">
+        <h3>Dr. Kaiser</h3>
+        <p>Medical Specialist • WordPress</p>
       </div>
     </a>
 
@@ -243,13 +277,7 @@
       </div>
     </a>
 
-    <a class="project-card" href="project3.html" aria-label="Dr Kaiser project" role="listitem">
-      <img src="images/DrKaiser.png" alt="Dr Kaiser website screenshot" loading="lazy" />
-      <div class="card-meta">
-        <h3>Dr. Kaiser</h3>
-        <p>Medical Specialist • WordPress</p>
-      </div>
-    </a>
+    
 
     <a class="project-card" href="project2.html" aria-label="Dr Jyoti Upadhyay project" role="listitem">
       <img src="images/DrJyotii.png" alt="Dr Jyoti Upadhyay website screenshot" loading="lazy" />
@@ -285,6 +313,112 @@
   </div>
 </section>
 
+<!-- Certificates -->
+<section id="certificates" class="container fade-in">
+  <h2 class="section-title">
+    <span class="accent-underline">Certificates</span>
+  </h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card cert-card"
+         onclick="openCert('images/Web Design Certificate.png','Web Design Certificate','HTML, CSS & Responsive Design')">
+      <img src="images/Web Design Cover Photo.png" alt="Web Design Certificate">
+      <div class="card-meta">
+        <h3>Web Design</h3>
+        <p>HTML, CSS, Responsive</p>
+      </div>
+    </div>
+
+    <div class="project-card cert-card"
+         onclick="openCert('images/cert-js.jpg','JavaScript Certificate','DOM, Events & Basics')">
+      <img src="images/JS Cover Photo.png" alt="JavaScript Certificate">
+      <div class="card-meta">
+        <h3>JavaScript (Basic)</h3>
+        <p>Frontend Logic</p>
+      </div>
+    </div>
+
+    <div class="project-card cert-card"
+         onclick="openCert('images/cert-php.jpg','PHP Certificate','Forms & Backend Basics')">
+      <img src="images/PHP Cover Photo.png" alt="PHP Certificate">
+      <div class="card-meta">
+        <h3>PHP (Basic)</h3>
+        <p>Server-side Basics</p>
+      </div>
+    </div>
+
+    <div class="project-card cert-card"
+         onclick="openCert('images/Graphic Design Certificate.png','Graphic Design Certificate','Canva, Photoshop & Illustrator')">
+      <img src="images/Graphic Design Cover Photo.png" alt="Graphic Design Certificate">
+      <div class="card-meta">
+        <h3>Graphic Design</h3>
+        <p>Design Tools</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- DESIGN SHOWCASE -->
+<section id="designs" class="container fade-in">
+  <h2 class="section-title">
+    <span class="accent-underline">Design Showcase</span>
+  </h2>
+
+  <p class="section-sub">
+    Selected branding, social media & marketing creatives
+  </p>
+
+  <div class="design-grid">
+
+    <!-- CARD 1 -->
+    <a href="images/MyDiabetes Care Instagram Posts.pdf"
+       target="_blank" class="design-card">
+      <img src="images/Instagram Creative Design Cover Photo .png" alt="Instagram Design">
+      <div class="design-overlay">
+        <h3>Instagram Creatives</h3>
+        <span>View Designs (PDF)</span>
+      </div>
+    </a>
+
+    <!-- CARD 2 -->
+    <a href="images/QFood-Resp-Allergy Test.pdf"
+       target="_blank" class="design-card">
+      <img src="images/A4 Landscape Flyer Design Cover Photo.png" alt="QFood Designs">
+      <div class="design-overlay">
+        <h3>A4 Landscape Flyer Design</h3>
+        <span>View Designs (PDF)</span>
+      </div>
+    </a>
+
+    <!-- CARD 3 -->
+    <a href="images/Digital Post.pdf"
+       target="_blank" class="design-card">
+      <img src="images/Instagram Story Design Cover Photo.png" alt="Flyer Design">
+      <div class="design-overlay">
+        <h3>Instagram Story Design</h3>
+        <span>View Design</span>
+      </div>
+    </a>
+
+    <!-- CARD 4 -->
+    <a href="images/Healthcare Awareness Post.pdf"
+       target="_blank" class="design-card">
+      <img src="images/Digital Marketing Cover Photo.png" alt="LinkedIn Cover">
+      <div class="design-overlay">
+        <h3>Digital Marketing Creative</h3>
+        <span>View Design</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+
 
       <!-- CONTACT -->
       <section id="contact" class="container fade-in">
@@ -292,7 +426,7 @@
           <span class="accent-underline">Contact</span>
         </h2>
         <p class="section-sub">
-          Let's work together — tell me about your project.
+          Let’s build a modern, high-performing website together.
         </p>
 
         <div class="contact-grid">
@@ -343,7 +477,7 @@
 
             <p><strong>Location:</strong> Karikatte Shiroor - 576228, Kundapura, Mangalore.</p>
             <div class="resume-download">
-  <a href="assets/resume.pdf" download class="resume-btn">
+  <a href="images/MYCV.pdf" download class="resume-btn">
     <i class="fa-solid fa-file-arrow-down"></i>
     Download Resume
   </a>
@@ -496,9 +630,13 @@ style="color:#00eaff; font-size:1.3rem; text-decoration:none;">
   </div>
 
   <!-- COPYRIGHT -->
-  <p style="font-size:0.75rem; color:#64748b;">
+  <!-- <p style="font-size:0.75rem; color:#64748b;">
     © 2025 - Designed & Developed by <b>Anfal</b> | Available for UAE Opportunities
-  </p>
+  </p> -->
+<div class="footer-badge">
+  © 2025 - Designed & Developed by <strong>Anfal</strong>
+  <span class="badge">Open to UAE Opportunities</span>
+</div>
 
 </div>
 </footer>
@@ -511,5 +649,20 @@ function scrollToTop() {
 </script>
 </footer>
     <script src="script.js"></script>
+
+    <!-- Certificate Modal -->
+<div id="certModal" class="cert-modal">
+  <div class="cert-box">
+    <span class="cert-close" onclick="closeCert()">×</span>
+
+    <h3 id="certTitle"></h3>
+    <p id="certDesc"></p>
+
+    <img id="certImage" src="" alt="Certificate">
+  </div>
+</div>
+
+
+
   </body>
 </html>
