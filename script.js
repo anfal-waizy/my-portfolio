@@ -107,3 +107,13 @@ document.querySelectorAll(".design-card").forEach(card => {
 });
 
 
+function openCert(img, title, desc) {
+  document.getElementById("certImg").src = img;
+  document.getElementById("certTitle").innerText = title;
+  document.getElementById("certDesc").innerText = desc;
+  document.getElementById("certModal").style.display = "flex";
+}
+
+function closeCert() {
+  document.getElementById("certModal").style.display = "none";
+}

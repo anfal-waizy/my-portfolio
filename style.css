@@ -1442,3 +1442,62 @@ juu
   border-color: #00eaff;
   color: #00eaff;
 }
+
+.projects-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resume-date {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.branded-projects {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.branded-projects li {
+  margin-bottom: 10px;
+}
+
+.branded-projects a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.branded-projects a:hover {
+  background: linear-gradient(135deg, #00eaff20, #ff5f6d20);
+  border-color: #00eaff;
+  transform: translateY(-2px);
+}
+
+.project-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #00eaff, #ff5f6d);
+  color: #0f172a;
+  font-size: 0.9rem;
+}

@@ -79,8 +79,6 @@
       </nav>
     </header>
 
-    
-
     <main>
       <!-- HERO -->
       <section id="home" class="hero container fade-in">
@@ -313,52 +311,7 @@
   </div>
 </section>
 
-<!-- Certificates -->
-<section id="certificates" class="container fade-in">
-  <h2 class="section-title">
-    <span class="accent-underline">Certificates</span>
-  </h2>
 
-  <div class="projects-grid">
-
-    <div class="project-card cert-card"
-         onclick="openCert('images/Web Design Certificate.png','Web Design Certificate','HTML, CSS & Responsive Design')">
-      <img src="images/Web Design Cover Photo.png" alt="Web Design Certificate">
-      <div class="card-meta">
-        <h3>Web Design</h3>
-        <p>HTML, CSS, Responsive</p>
-      </div>
-    </div>
-
-    <div class="project-card cert-card"
-         onclick="openCert('images/cert-js.jpg','JavaScript Certificate','DOM, Events & Basics')">
-      <img src="images/JS Cover Photo.png" alt="JavaScript Certificate">
-      <div class="card-meta">
-        <h3>JavaScript (Basic)</h3>
-        <p>Frontend Logic</p>
-      </div>
-    </div>
-
-    <div class="project-card cert-card"
-         onclick="openCert('images/cert-php.jpg','PHP Certificate','Forms & Backend Basics')">
-      <img src="images/PHP Cover Photo.png" alt="PHP Certificate">
-      <div class="card-meta">
-        <h3>PHP (Basic)</h3>
-        <p>Server-side Basics</p>
-      </div>
-    </div>
-
-    <div class="project-card cert-card"
-         onclick="openCert('images/Graphic Design Certificate.png','Graphic Design Certificate','Canva, Photoshop & Illustrator')">
-      <img src="images/Graphic Design Cover Photo.png" alt="Graphic Design Certificate">
-      <div class="card-meta">
-        <h3>Graphic Design</h3>
-        <p>Design Tools</p>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 
 
@@ -417,6 +370,114 @@
   </div>
 </section>
 
+
+<!-- CERTIFICATES -->
+<section id="designs" class="container fade-in">
+  <h2 class="section-title">
+    <span class="accent-underline">Certifications</span>
+  </h2>
+
+  <p class="section-sub">
+  Verified certifications in web development, programming, and design tools
+</p>
+
+  <div class="design-grid">
+
+    <!-- CERTIFICATE 1 -->
+    <a href="images/Web Design Certificate.png"
+       target="_blank" class="design-card">
+      <img src="images/Web Design Cover Photo.png" alt="Instagram Design">
+      <div class="design-overlay">
+        <h3>Web Design</h3>
+        <p>HTML, CSS, Responsive</p>
+      </div>
+    </a>
+
+    <!-- CERTIFICATE 2 -->
+    <a href="images/js-certificate.png"
+       target="_blank" class="design-card">
+      <img src="images/JS Cover Photo.png" alt="QFood Designs">
+      <div class="design-overlay">
+        <h3>JavaScript (Basic)</h3>
+        <p>Frontend Logic</p>
+      </div>
+    </a>
+
+    <!-- CERTIFICATE 3 -->
+    <a href="images/php-certificate.jpeg"
+       target="_blank" class="design-card">
+      <img src="images/PHP Cover Photo.png" alt="Flyer Design">
+      <div class="design-overlay">
+        <h3>PHP (Basic)</h3>
+        <p>Server-side Basics</p>
+      </div>
+    </a>
+
+    <!-- CERTIFICATE 4 -->
+    <a href="images/Graphic Design Certificate.png"
+       target="_blank" class="design-card">
+      <img src="images/Graphic Design Cover Photo.png" alt="LinkedIn Cover">
+      <div class="design-overlay">
+        <h3>Graphic Design</h3>
+        <p>Design Tools</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- Certificates -->
+<!-- <section id="certificates" class="container fade-in">
+  <h2 class="section-title">
+    <span class="accent-underline">Certificates</span>
+  </h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card cert-card"
+         onclick="openCert('images/Web Design Certificate.png','Web Design Certificate','HTML, CSS & Responsive Design')">
+      <img src="images/Web Design Cover Photo.png" alt="Web Design Certificate">
+      <div class="card-meta">
+        <h3>Web Design</h3>
+        <p>HTML, CSS, Responsive</p>
+      </div>
+    </div>
+
+
+    <div class="project-card cert-card"
+         onclick="openCert('images/js-certificate','JavaScript Certificate','DOM, Events & Basics')">
+      <img src="images/JS Cover Photo.png" alt="JavaScript Certificate">
+      <div class="card-meta">
+        <h3>JavaScript (Basic)</h3>
+        <p>Frontend Logic</p>
+      </div>
+    </div>
+
+
+
+    <div class="project-card cert-card"
+         onclick="openCert('images/cert-php.jpg','PHP Certificate','Forms & Backend Basics')">
+      <img src="images/PHP Cover Photo.png" alt="PHP Certificate">
+      <div class="card-meta">
+        <h3>PHP (Basic)</h3>
+        <p>Server-side Basics</p>
+      </div>
+    </div>
+
+   
+
+    <div class="project-card cert-card"
+         onclick="openCert('images/Graphic Design Certificate.png','Graphic Design Certificate','Canva, Photoshop & Illustrator')">
+      <img src="images/Graphic Design Cover Photo.png" alt="Graphic Design Certificate">
+      <div class="card-meta">
+        <h3>Graphic Design</h3>
+        <p>Design Tools</p>
+      </div>
+    </div>
+
+
+  </div>
+</section> -->
 
 
 
@@ -650,17 +711,14 @@ function scrollToTop() {
 </footer>
     <script src="script.js"></script>
 
-    <!-- Certificate Modal -->
+<!-- Certificate Modal -->
 <div id="certModal" class="cert-modal">
-  <div class="cert-box">
-    <span class="cert-close" onclick="closeCert()">×</span>
-
-    <h3 id="certTitle"></h3>
-    <p id="certDesc"></p>
-
-    <img id="certImage" src="" alt="Certificate">
-  </div>
+  <span class="cert-close" onclick="closeCert()">×</span>
+  <img id="certImg" src="" alt="Certificate">
+  <h3 id="certTitle"></h3>
+  <p id="certDesc"></p>
 </div>
+
 
 
 
